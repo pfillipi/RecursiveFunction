@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+html,body{
+  padding:0;
+  margin:0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+$global_font_family: 'Assistant', sans-serif;
+$secondary-font: 'Source Sans Pro', cursive;
+
+$card-sub-header: 18px;
+$text-large-2: 32px;
+$text-large-1: 22px;
+$text-large: 16px;
+$text-normal: 12px;
+$text-small: 12px;
+$text-x-small: 12px;
+$text-xx-small: 11px;
+$text-xxx-small: 10px;
+
+$light-grey: #f9f9f9;
+$grey: #494c53;
+$dark-grey: #353942;
+
+$primary-color: #29c7ca;
+$highlight-color: #e7604a;
+$highlight-color-dark: #c94d3a;
+
+$error-color: #ff0000;
+$delete-button-color: #ff0000;
+$blue-link-color: #2180bc;
+
+.page-container {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.page-title {
+  padding: 20px 30px;
+  font-size: 28px;
+  color: #333;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+.page-body {
+  padding: 0;
+}
+
+.blocks {
+    flex-direction  : row;
+    justify-content : space-between;
+
+    &__title {
+        font-size     : $text-large;
+        font-weight   : bold;
+        margin-bottom : 30px;
+        margin-top    : 30px;
+
+        &:first-child {
+            margin-top : 0;
+        }
+    }
+
+    &__instruction {
+        background-color : #f0f0f0;
+        border           : 1px #ccc solid;
+        padding          : 10px;
+        font-size        : $text-small;
+        margin-bottom    : 20px;
+        color            : #000;
+
+        p.indent {
+            margin-left : 20px;
+        }
+    }
+
+    > div {
+        padding : 0 20px;
+        &:first-child {
+            width : 80%;
+        }
+    }
+}
+
+.test-block {
+    border-right  : 1px solid #ccc;
+    padding-right : 20px;
+}
+
+.solution-block {
+    min-width : 500px;
+}
+
+h1{
+  margin-top:0;
+  padding-top:0;
+}
+
